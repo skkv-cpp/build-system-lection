@@ -1,0 +1,14 @@
+CC=g++
+
+CFLAGS=-Wall
+
+all: hello
+
+hello: hello.o
+	$(CC) $(CFLAGS) main.cpp hello.o
+
+hello.o:
+	$(CC) $(CFLAGS) hello.cpp -c -o hello.o
+
+
+
