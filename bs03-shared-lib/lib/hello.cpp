@@ -1,4 +1,4 @@
-#include "hello.hh"
+#include "hello.h"
 
 void hello()
 {

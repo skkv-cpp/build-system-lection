@@ -1,4 +1,4 @@
-#include "operations/sub.hh"
+#include "operations/sub.h"
 
 #include <gtest/gtest.h>
 

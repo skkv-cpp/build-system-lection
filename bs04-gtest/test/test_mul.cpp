@@ -1,4 +1,4 @@
-#include "operations/mul.hh"
+#include "operations/mul.h"
 
 #include <gtest/gtest.h>
 

@@ -15,7 +15,8 @@
       "name": "Default-Release",
       "inherits": "Base",
       "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
+        "CMAKE_BUILD_TYPE": "Release",
+        "HELLO": true
       }
     },
     {

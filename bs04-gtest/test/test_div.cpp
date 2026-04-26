@@ -1,4 +1,4 @@
-#include "operations/div.hh"
+#include "operations/div.h"
 
 #include <gtest/gtest.h>
 

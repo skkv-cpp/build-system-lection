@@ -10,8 +10,12 @@ add_custom_target(SetupPythonVenv
     COMMAND ${Python3_EXECUTABLE} -m venv venv
 )
 
+message(PYTHON: ${Python3_EXECUTABLE})
+message(${CMAKE_CURRENT_SOURCE_DIR})
+message(${PROJECT_BINARY_DIR})
+
 add_custom_target(RunScript
-    COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/run.py ${PROJECT_BINARY_DIR}/hello
+    COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/run.py $<TARGET_FILE:hello>
     DEPENDS SetupPythonVenv hello
 )
 
